@@ -29,7 +29,10 @@ WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_first_
 
 WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_last_name'), 'nh')
 
-WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_email'), email_list[0])
+for(def email : email_list) {
+	WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_email'), email)
+	
+}
 
 WebUI.setEncryptedText(findTestObject('Object Repository/SPFRegisterCustomer/input_password'), 'aeHFOx8jV/A=')
 

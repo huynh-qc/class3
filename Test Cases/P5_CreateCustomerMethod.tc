@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>P1_CreateCustomer</name>
+   <name>P5_CreateCustomerMethod</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>52f202e4-5dad-4d14-85b6-d187e9ddd4ef</testCaseGuid>
+   <testCaseGuid>48b03994-a41d-4e20-8364-fb0f589aece9</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>10636233-fdab-4caf-aa1c-1c727bdb1e82</variableId>
+      <variableId>d9e51057-750b-4c15-9a51-b6c58bdac2c9</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>findTestObject('SPFRegisterCustomer/input_first_name')</defaultValue>
+      <defaultValue>findTestObject('SPFRegisterCustomer/input_email')</defaultValue>
       <description></description>
-      <id>10636233-fdab-4caf-aa1c-1c727bdb1e82</id>
+      <id>d9e51057-750b-4c15-9a51-b6c58bdac2c9</id>
       <masked>false</masked>
-      <name>input_first_name</name>
+      <name>input_email</name>
    </variable>
 </TestCaseEntity>

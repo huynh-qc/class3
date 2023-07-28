@@ -19,8 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://auto2023.myshopify.com/account/register')
 
+def emaillist = ['email1','email2']
 
-WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_first_name'), 'huy')
+WebUI.setText(input_first_name, 'huy')
 
 WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_last_name'), 'nh')
 

@@ -17,10 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-addThreeNumbers(10,20)
+def customer_info =[
+	cus1:[first:'huy',last:'nh',email:'huynh@gmail.com'],
+	cus2:[first:'huy2',last:'nh2',email:'huynh2@gmail.com']
+   ]
 
-def addThreeNumbers(def firstValue, def secondValue, def thirdValue=100)
-    {
-        def total = firstValue + secondValue + thirdValue
-        println("The total value is : " + total)
-    }
+WebUI.openBrowser('https://auto2023.myshopify.com/account/register')
+
+
+WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_first_name'),customer_info.cus1.first )
+
+WebUI.setText(findTestObject('Object Repository/SPFRegisterCustomer/input_last_name'), customer_info.cus1.last)
+
+EmailClick5Times(input_email,customer_info.cus1.email)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/SPFRegisterCustomer/input_password'), 'aeHFOx8jV/A=')
+
+WebUI.click(findTestObject('Object Repository/SPFRegisterCustomer/btn_create'))
+
+def EmailClick5Times(def input_email,def emailfunction) {
+
+}

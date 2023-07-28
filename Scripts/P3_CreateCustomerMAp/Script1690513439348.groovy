@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 def customer_info =[
-	 cus1:[first:'huy',last:'nh',email:'huynh@gmail.com'],
+	 cus1:[first:'huy',last:'nh',email:'huyn3h@gmail.com'],
 	 cus2:[first:'huy2',last:'nh2',email:'huynh2@gmail.com']
 	]
 
